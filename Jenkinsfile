@@ -1,13 +1,13 @@
-Pipeline {
+Pipeline{
   agent any
   stages {
     stage('compile'){
-      steps {
+      steps{
         sh 'javac HelloWorld.java'
       }
     }
     stage('Run'){
-      steps {
+      steps{
         sh 'java HelloWorld'
       }
     }
